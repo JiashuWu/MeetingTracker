@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34A853</color>
+    <color name="colorPrimaryDark">#34A853</color>
+    <color name="colorAccent">#34A853</color>
+    <color name="passwordWeak">#fc2c03</color>
+    <color name="passwordModerate">#fc8803</color>
+    <color name="passwordStrong">#00d61d</color>
+    <color name="emailIncorrect">#fc2c03</color>
+    <color name="phoneIncorrect">#fc2c03</color>
+    <color name="error">#fc2c03</color>
+    <color name="pass">#00d61d</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDark">#171717</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="warning">#fc8803</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="grey">#f7f7f7</color>
+    <color name="gmailSelected">#ff9494</color>
+    <color name="outlookSelected">#99d6ff</color>
+    <color name="chromeSelected">#ffda99</color>
+    <color name="browserSelected">#c5ffc2</color>
+    <color name="colorGrey">#c9c9c9</color>
+</resources>

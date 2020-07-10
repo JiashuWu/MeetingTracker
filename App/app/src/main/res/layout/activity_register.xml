@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_register_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting Tracker"
+                android:textColor="#000000"
+                android:textSize="36sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+            <!-- E-mail Text Input Layout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_register_email_textinputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/edittext_left_margin"
+                android:layout_marginEnd="@dimen/edittext_right_margin"
+                android:layout_marginTop="@dimen/edittext_top_margin"
+                android:layout_below="@id/activity_register_title_textview"
+                android:hint="Email"
+                app:errorEnabled="true"
+                app:hintEnabled="true"
+                app:helperTextEnabled="true"
+                app:helperText="Please fill in your email address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_register_email_edittext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone Text Input Layout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_register_phone_textinputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/edittext_left_margin"
+                android:layout_marginEnd="@dimen/edittext_right_margin"
+                android:layout_marginTop="@dimen/edittext_top_margin"
+                android:layout_below="@id/activity_register_email_textinputlayout"
+                android:hint="Phone (Optional)"
+                app:errorEnabled="true"
+                app:hintEnabled="true"
+                app:helperTextEnabled="true"
+                app:helperText="Please fill in your phone number (optional)"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_register_phone_edittext"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password Text Input Layout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_register_password_textinputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/edittext_left_margin"
+                android:layout_marginEnd="@dimen/edittext_right_margin"
+                android:layout_marginTop="@dimen/edittext_top_margin"
+                android:layout_below="@id/activity_register_phone_textinputlayout"
+                android:hint="Password"
+                app:errorEnabled="true"
+                app:hintEnabled="true"
+                app:helperTextEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:helperText="Please fill in your password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_register_password_edittext"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawableStart="@drawable/ic_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:drawablePadding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password Confirmation Text Input Layout -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_register_password_confirmation_textinputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/edittext_left_margin"
+                android:layout_marginEnd="@dimen/edittext_right_margin"
+                android:layout_marginTop="@dimen/edittext_top_margin"
+                android:layout_below="@id/activity_register_password_textinputlayout"
+                android:hint="Confirm Password"
+                app:errorEnabled="true"
+                app:hintEnabled="true"
+                app:helperTextEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:helperText="Please confirm your password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_register_password_confirmation_edittext"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawableStart="@drawable/ic_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:drawablePadding="5dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/button_left_margin"
+                android:layout_marginEnd="@dimen/button_right_margin"
+                android:layout_marginTop="@dimen/button_top_margin"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:id="@+id/activity_register_register_button"
+                android:layout_below="@id/activity_register_password_confirmation_textinputlayout"
+                android:text="Register"
+                android:textAllCaps="false"
+                app:strokeColor="#000000"
+                android:textColor="#000000"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="4dp"
+                app:rippleColor="@android:color/transparent"
+                app:strokeWidth="1dp"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <TextView
+                android:id="@+id/activity_register_login_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Registered? Login Here!"
+                android:gravity="center"
+                android:layout_below="@+id/activity_register_register_button"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <ProgressBar
+                android:id="@+id/activity_register_determinate_progressar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_register_login_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="26dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

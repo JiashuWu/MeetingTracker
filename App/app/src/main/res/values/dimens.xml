@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edittext_left_margin">36dp</dimen>
+    <dimen name="edittext_right_margin">36dp</dimen>
+    <dimen name="edittext_top_margin">26dp</dimen>
+
+    <dimen name="textview_left_margin">36dp</dimen>
+    <dimen name="textview_right_margin">36dp</dimen>
+    <dimen name="textview_top_margin">26dp</dimen>
+
+    <dimen name="button_left_margin">36dp</dimen>
+    <dimen name="button_right_margin">36dp</dimen>
+    <dimen name="button_top_margin">26dp</dimen>
+
+    <dimen name="layout_left_margin">36dp</dimen>
+    <dimen name="layout_right_margin">36dp</dimen>
+    <dimen name="layout_top_margin">26dp</dimen>
+
+    <dimen name="chipgroup_left_margin">36dp</dimen>
+    <dimen name="chipgroup_right_margin">36dp</dimen>
+    <dimen name="chipgroup_top_margin">26dp</dimen>
+
+    <dimen name="chip_stroke_width">1dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

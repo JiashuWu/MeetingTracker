@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="36dp"
+                android:id="@+id/activity_home_greeting_textview"
+                android:text="Good morning"
+                android:textSize="30sp"
+                android:textColor="@color/colorBlack" />
+
+            <!-- Next Meeting Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/activity_home_upcoming_card"
+                android:layout_below="@id/activity_home_greeting_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#ffd1dc"
+                android:alpha="1"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/transparent"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="26dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upcoming Meeting"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/activity_home_upcomingtime_textview"
+                            android:text="08:00 AM"
+                            android:textSize="20sp"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="@color/colorBlack"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:id="@+id/activity_home_upcomingtopic_textview"
+                            android:text="Topic: Baillieu Library Machine Learning Discussion"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Create Meeting Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/activity_home_create_card"
+                android:layout_below="@id/activity_home_upcoming_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#ded1ff"
+                android:alpha="1"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/transparent"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="26dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Create Meeting"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Click to Create a Meeting"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text=" "
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Scan Meeting Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/activity_home_scan_card"
+                android:layout_below="@id/activity_home_create_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#d1fff0"
+                android:alpha="1"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/transparent"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="26dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scan Meeting QR Code"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Scan Meeting Invitation QR Code"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text=" "
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- List Meeting Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/activity_home_meeting_card"
+                android:layout_below="@id/activity_home_scan_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#c4f1ff"
+                android:alpha="1"
+                app:cardCornerRadius="12dp"
+                app:strokeWidth="0dp"
+                app:strokeColor="@color/transparent"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="36dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Meetings"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="My Meeting Schedules"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text=" "
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
